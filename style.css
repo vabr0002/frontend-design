@@ -10,12 +10,10 @@
 .card:not(:has(h3, img)) p {
   font-size: 1.25rem;
   line-height: 1.4;
-  color: red;
 }
 /* Opgave 2*/
 .card:not(:has(img)) h3 {
   font-size: 1.6rem;
-  color: red;
 }
 
 /*Opgave 3*/
