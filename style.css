@@ -16,7 +16,7 @@
 
 img {
   height: auto;
-  width: 100%;
+  width: var(--image-width);
   object-fit: cover;
   border-radius: 100%;
 }
@@ -41,6 +41,7 @@ h1 {
 p {
   color: #3b978c;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .iconer {
