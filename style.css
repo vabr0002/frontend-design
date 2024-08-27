@@ -1,16 +1,49 @@
 :root {
-    background: #E3EDFB;
+  background: #e3edfb;
 
-    --color-icon: #0B3A67;
+  --color-icon: #0b3a67;
 
-    --image-width: 8rem;
-    --card-padding: 1rem;
+  --image-width: 8rem;
+  --card-padding: 1rem;
 
-    --font-heading: 1.75rem;
+  --font-heading: 1.75rem;
 
-    /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+  /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
+  --hide-overlay: 1;
 }
 
-
 /* Begynd her... */
+
+img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.grid {
+  display: flex;
+  padding: var(--card-padding);
+  max-width: 400px;
+  gap: 10px;
+}
+
+.content {
+  font-size: var(--font-heading);
+  font-weight: bold;
+}
+
+p {
+  color: #3b978c;
+  font-weight: bold;
+}
+
+.iconer {
+  display: flex;
+  height: 25px;
+}
