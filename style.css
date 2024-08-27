@@ -5,7 +5,7 @@
   --color-text-button: #fff;
 
   /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-  --hide-overlay: 0;
+  --hide-overlay: 1;
 }
 
 /* Begynd her... */
@@ -18,8 +18,15 @@ p {
 }
 
 .btn {
-  padding: 5px;
-  border-radius: 10px;
+  background-color: #3d7bfa;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.btn :hover {
+  color: #677386;
 }
 
 .grid {
@@ -29,5 +36,35 @@ p {
 }
 
 .grid-content {
-  gap: 5px;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.grid-galleri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  border-radius: 0.75em;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 0.75em;
+  align-self: stretch;
+  object-fit: cover;
+
+  &:nth-child(1),
+  &:nth-child(7) {
+    grid-column: (2);
+  }
+
+  &:nth-child(2) {
+    grid-column: 1;
+  }
+  &:nth-child(3) {
+    grid-row: span 2;
+  }
 }
