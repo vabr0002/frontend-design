@@ -2,7 +2,6 @@
 const { cardContent } = Astro.props;
 ---
 
-
 <ul class="full-width">
   {
     cardContent.map((card) => (
@@ -15,39 +14,7 @@ const { cardContent } = Astro.props;
 </ul>
 
 <style>
-  
-
-  
-  
-  
   ul {
     list-style: none;
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-
-    li {
-      flex-basis: min(400px, 90%);
-    flex-shrink: 0;
-    background: #EBEBEB;
-    color: #595566;
-    border-radius: 8px;
-    font-size: 1rem;
-    padding: 2.75rem 2.1875rem;
-    align-self: start;
-    }
-  }
-
-  header{
-    max-width: fit-content;
-    margin-top: 100px;
-    font-size: 3rem;
-
-  }
-
-  h3 {
-font-size: 2rem;
-color: red;
-
   }
 </style>
