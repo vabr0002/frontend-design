@@ -2,6 +2,7 @@
 const { cardContent } = Astro.props;
 ---
 
+
 <ul class="full-width">
   {
     cardContent.map((card) => (
@@ -27,5 +28,15 @@ const { cardContent } = Astro.props;
     font-size: 1rem;
     padding: 2.75rem 2.1875rem;
     }
+  }
+
+  header{
+    max-width: fit-content;
+    margin-top: 100px;
+  }
+
+  h3 {
+font-size: 2rem;
+
   }
 </style>
