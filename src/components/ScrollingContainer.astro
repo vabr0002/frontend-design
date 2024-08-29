@@ -14,7 +14,28 @@ const { cardContent } = Astro.props;
 </ul>
 
 <style>
-  ul {
+ .full-width {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+
     list-style: none;
+    
+    li {
+      flex-basis: min(400px, 90%);
+      flex-shrink: 0;
+      background: #EBEBEB;
+      color: #595566;
+      border-radius: 8px;
+      font-size: 1rem;
+      padding: 2.75rem 2.1875rem;
+      align-self: start;
+      
+      h3 {
+        font-weight: 700;
+        font-size: 1.5625rem;
+      }
+    }
   }
 </style>
+
